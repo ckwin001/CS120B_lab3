@@ -1,0 +1,22 @@
+tests = [ {'description': 'PINA: 0x00 => PORTC: 0x40',
+    'steps': [ {'inputs': [('PINA',0x00)], 'iterations': 5 } ],
+    'expected': [('PORTC',0x40)],
+    },
+    {'description': 'PINA: 0x01 => PORTC: 0x01',
+    'steps': [ {'inputs': [('PINA',0x01)], 'iterations': 5 } ],
+    'expected': [('PORTC',0x01)],
+    },
+    {'description': 'PINA: 0x03 => PORTC: 0x70',
+    'steps': [ {'inputs': [('PINA',0x03)], 'iterations': 5 } ],
+    'expected': [('PORTC',0x70)],
+    },
+    {'description': 'PINA: 0x07 => PORTC: 0x3C',
+    'steps': [ {'inputs': [('PINA',0x07)], 'iterations': 5 } ],
+    'expected': [('PORTC',0x3C)],
+    },
+    {'description': 'PINA: 0x0F => PORTC: 0x3F',
+    'steps': [ {'inputs': [('PINA',0x0F)], 'iterations': 5 } ],
+    'expected': [('PORTC',0x3F)],
+    }
+    ]
+#watch = ['PORTB']
